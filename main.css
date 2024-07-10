@@ -6,11 +6,11 @@
 }
 
 header {
-  background-color: #5f27cd;
+  background-color: #b77908;
   padding: 16px 0;
   color: #fff;
   display: grid;
-  border-bottom: 16px solid #341f97;
+  border-bottom: 16px solid #b77908;
   justify-content: center;
   text-transform: uppercase;
   font-style: italic;
@@ -59,9 +59,9 @@ li {
   padding: 10px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #ccc;
-  display: flex;
+  display: block;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -90,4 +90,10 @@ li:hover {
 
 .delete-btn:hover {
   background-color: #c82333;
+}
+
+.completed {
+  text-decoration: line-through;
+  text-align: center;
+  display: block;
 }

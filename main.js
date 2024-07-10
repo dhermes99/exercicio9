@@ -18,15 +18,9 @@ $(document).ready(function () {
 
   $("#task-list").on("click", "li", function (e) {
     if (!$(e.target).is("button")) {
-      $(this).find("span").toggleClass("line-through");
+      $(this).toggleClass("completed"); // Adiciona ou remove a classe 'completed'
     }
   });
-
-  $("#task-list").on("click", ".delete-btn", function (e) {
-    e.stopPropagation();
-    $(this).parent().remove();
-  });
-
   $("#clear-tasks").on("click", function () {
     $("#task-list").empty();
   });
